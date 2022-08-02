@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <section className="main-container">
         <section className="my-[200px]">
           <div className="text-center text-4xl mb-[50px] font-bold">
-            <h2>It's build for everyone</h2>
+            <h2>It&apos;s build for everyone</h2>
           </div>
           <div className="customers grid grid-cols-3 w-[80%] gap-8 mx-auto">
             <div className="flex flex-col items-center justify-center bg-green-200 border-2 border-green-400 text-green-500 rounded-[12px] h-[180px]">
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
         </section>
         <section className="text-center my-[160px]">
           <span className="font-bold text-4xl text-stone-700 tracking-wide">
-            Interested already? There're even more <span className="text-blue-500">features</span>!
+            Interested already? There&apos;re even more <span className="text-blue-500">features</span>!
           </span>
         </section>
       </section>
