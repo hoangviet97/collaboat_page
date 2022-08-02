@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
           <div>Anytime, Anywhere</div>
         </h1>
-        <Link href="app.collaboat.cz">
+        <Link href="https://app.collaboat.cz">
           <button className="text-white bg-blue-500 py-[8px] px-[25px] rounded-lg">Get Started</button>
         </Link>
       </div>
