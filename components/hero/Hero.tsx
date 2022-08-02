@@ -1,6 +1,7 @@
 import React from "react";
 import Bell from "./Bell";
 import StopWatch from "./StopWatch";
+import Link from "next/link";
 
 const Hero = () => {
   const imgElement = React.useRef<any>(null);
@@ -28,7 +29,9 @@ const Hero = () => {
           </div>
           <div>Anytime, Anywhere</div>
         </h1>
-        <button className="text-white bg-blue-500 py-[8px] px-[25px] rounded-lg">Get Started</button>
+        <Link href="app.collaboat.cz">
+          <button className="text-white bg-blue-500 py-[8px] px-[25px] rounded-lg">Get Started</button>
+        </Link>
       </div>
       <div className="main-container z-20">
         <img className="hero__image" src="/image.png" ref={imgElement} onLoad={() => console.log(imgElement.current.naturalHeight)} alt="" />
