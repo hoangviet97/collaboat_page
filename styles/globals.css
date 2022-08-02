@@ -1,16 +1,86 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+  background: red;
+  position: relative;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid red;
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid red;
+}
+
+.hero__image {
+  filter: drop-shadow(10px 10px 10px rgba(59, 130, 246, 0.3));
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.words {
+  overflow: hidden;
+}
+
+.title-box {
+  overflow: hidden;
+  height: 70px;
+}
+
+.words span {
+  padding-left: 17px;
+  display: block;
+  text-align: left;
+  animation: spin-word 6s infinite ease-in-out;
+  animation-delay: 10s;
+}
+
+@keyframes spin-word {
+  0% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(-112%);
+  }
+
+  50% {
+    transform: translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(-212%);
+  }
+
+  100% {
+    transform: translateY(-200%);
+  }
 }
