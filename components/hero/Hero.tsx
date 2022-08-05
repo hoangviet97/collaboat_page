@@ -10,14 +10,14 @@ const Hero = () => {
     <div className="relative">
       <div className="absolute w-[100%] h-[100vh] bg-slate-100"></div>
       <div className="hero__content text-center pt-[22vh] mb-[50px] relative">
-        <div className="absolute top-[250px] left-[180px] rotate-[30deg] bg-red-100 rounded-[50%] w-[40px] h-[40px] flex justify-center items-center border-2 border-red-500">
+        <div className="hidden absolute top-[250px] left-[180px] rotate-[30deg] bg-red-100 rounded-[50%] w-[40px] h-[40px] lg:flex justify-center items-center border-2 border-red-500">
           <Bell />
         </div>
-        <div className="absolute top-[150px] right-[20%] rotate-[30deg] bg-green-200 rounded-[50%] w-[52px] h-[52px] flex justify-center items-center border-2 border-green-400 z-10">
+        <div className="hidden absolute top-[150px] right-[20%] rotate-[30deg] bg-green-200 rounded-[50%] w-[52px] h-[52px] lg:flex justify-center items-center border-2 border-green-400 z-10">
           <StopWatch />
         </div>
-        <div className="w-[8px] h-[8px] absolute left-[45%] top-[120px] bg-red-500 rounded-[50%]"></div>
-        <div className="w-[8px] h-[8px] absolute right-[30%] top-[320px] bg-green-400 rounded-[50%]"></div>
+        <div className="hidden lg:block w-[8px] h-[8px] absolute left-[45%] top-[120px] bg-red-500 rounded-[50%]"></div>
+        <div className="hidden lg:block w-[8px] h-[8px] absolute right-[30%] top-[320px] bg-green-400 rounded-[50%]"></div>
         <h1 className="text-5xl flex flex-col justify-center font-semibold text-stone-700 mb-[30px] leading-snug">
           <div className="title-box flex flex-row justify-center">
             <div className="text-left ml-[7px]">Control your </div>
@@ -33,8 +33,8 @@ const Hero = () => {
           <button className="text-white bg-blue-500 py-[8px] px-[25px] rounded-lg">Get Started</button>
         </Link>
       </div>
-      <div className="main-container z-20">
-        <img className="hero__image" src="/image.png" ref={imgElement} onLoad={() => console.log(imgElement.current.naturalHeight)} alt="" />
+      <div className="main-container px-[20px] lg:px-0 z-20">
+        <img className="hero__image" src="/tasks.png" ref={imgElement} onLoad={() => console.log(imgElement.current.naturalHeight)} alt="" />
       </div>
     </div>
   );
