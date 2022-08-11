@@ -37,6 +37,14 @@
   border-top: 28.8675px solid red;
 }
 
+.img-shadow {
+  filter: drop-shadow(10px 10px 10px rgba(59, 130, 246, 0.3));
+}
+
+.more-features {
+  box-shadow: 10px 10px 10px rgba(59, 130, 246, 0.3);
+}
+
 .hero__image {
   filter: drop-shadow(10px 10px 10px rgba(59, 130, 246, 0.3));
 }

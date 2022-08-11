@@ -2,6 +2,8 @@ import React from "react";
 import Bell from "./Bell";
 import StopWatch from "./StopWatch";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   const imgElement = React.useRef<any>(null);
@@ -30,7 +32,9 @@ const Hero = () => {
           <div>Anytime, Anywhere</div>
         </h1>
         <Link href="https://app.collaboat.cz">
-          <button className="text-white bg-blue-500 py-[8px] px-[25px] rounded-lg">Get Started</button>
+          <button className="text-white bg-blue-500 transition duration-150 hover:ease-out py-[8px] px-[25px] rounded-lg">
+            Get Started &nbsp; <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </Link>
       </div>
       <div className="main-container px-[20px] lg:px-0 z-20">

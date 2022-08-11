@@ -2,7 +2,7 @@ import React from "react";
 
 const AuthNav = () => {
   return (
-    <div className="hidden md:block">
+    <div>
       <button className="py-[8px] px-[25px] text-blue-500">
         <a>Login</a>
       </button>
