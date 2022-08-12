@@ -39,16 +39,22 @@ const Home: NextPage = () => {
           </div>
         </section>
         <MainFeatures />
-        <section className="text-center my-[180px]">
+        <section className="text-center my-[140px] md:my-[180px] mx-[40px] md:mx-0">
           <div className="font-bold text-4xl text-stone-700 tracking-wide">
             Interested already? There&apos;re even more <span className="text-blue-500">features</span>!
           </div>
           <MoreFeatures />
         </section>
       </section>
-      <section className="bg-blue-500 w-[100%] h-[200px]">
-        <div>So what are you waiting for?</div>
-        <div>Create </div>
+      <section className="bg-[#222f3e] w-[100%] h-[300px] flex justify-around items-center">
+        <div className="text-white text-5xl leading-normal tracking-normal">
+          So what are you waiting for? <br /> Create your free acoount now
+        </div>
+        <div>
+          <Link href="https://app.collaboat.cz/register">
+            <button className="bg-blue-500 text-white py-[10px] px-[25px] rounded-[12px] text-xl">Get started</button>
+          </Link>
+        </div>
       </section>
     </div>
   );

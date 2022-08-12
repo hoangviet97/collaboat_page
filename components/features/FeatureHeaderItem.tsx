@@ -10,7 +10,7 @@ interface Props {
 
 const FeatureHeaderItem: FC<Props> = ({ title, icon, setFeature }) => {
   return (
-    <div className="py-[25px] flex flex-col gap-[6px] hover:bg-blue-500 hover:text-white" onClick={() => setFeature(title)}>
+    <div className="py-[25px] flex flex-col gap-[6px] text-gray-600 hover:bg-blue-500 hover:text-white" onClick={() => setFeature(title)}>
       <FontAwesomeIcon icon={icon} className="text-[22px]" />
       <span>{title}</span>
     </div>

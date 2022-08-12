@@ -7,7 +7,7 @@ interface Props {
 const MoreFeaturesContent: FC<Props> = ({ content }) => {
   return (
     <div className="flex justify-center">
-      <img src={`./${content}.png`} className="img-shadow w-[70%]" />
+      <img src={`./${content}.png`} className="img-shadow w-[100%] md:w-[70%]" />
     </div>
   );
 };

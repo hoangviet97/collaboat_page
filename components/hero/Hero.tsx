@@ -32,9 +32,7 @@ const Hero = () => {
           <div>Anytime, Anywhere</div>
         </h1>
         <Link href="https://app.collaboat.cz">
-          <button className="text-white bg-blue-500 transition duration-150 hover:ease-out py-[8px] px-[25px] rounded-lg">
-            Get Started &nbsp; <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          <button className="text-white bg-blue-500 transition duration-150 hover:ease-out py-[8px] px-[25px] rounded-lg">Get Started</button>
         </Link>
       </div>
       <div className="main-container px-[20px] lg:px-0 z-20">

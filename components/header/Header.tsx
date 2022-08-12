@@ -18,7 +18,7 @@ const Header = () => {
   });
 
   return (
-    <div className={`fixed w-[100%] py-7 z-30 px-[20px] bg-${bgColor}`}>
+    <div className={`fixed w-[100%] py-7 z-30 px-[20px] bg-${bgColor} border-b-${bgColor === "white" ? "2" : "0"}`}>
       <div className="main-container flex items-center justify-between ">
         <div className="header__left-side flex items-center gap-8">
           <div>

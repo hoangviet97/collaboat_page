@@ -68,7 +68,6 @@
   display: block;
   text-align: left;
   animation: spin-word 6s infinite ease-in-out;
-  animation-delay: 10s;
 }
 
 @keyframes spin-word {
