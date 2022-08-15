@@ -10,7 +10,9 @@ const MainFeatures = () => {
             <span className="text-blue-500">PROJECTS &#38; TASKS</span>
             <h2 className="text-4xl font-bold tracking-wide text-stone-700 mb-[15px] mt-[10px] after:w-[100px] after:h-[4px] after:bg-blue-500 md:after:block after:mx-auto md:after:mx-0 after:mt-[30px]">Work with tasks for maximum productivity</h2>
             <p className="text-xl font-light tracking-wide mt-[25px]">Simply break down complex project into small sections with subtasks for better managing.</p>
-            <button>Read more</button>
+            <Link href="/tasks">
+              <button className="text-blue-500 mt-[10px]">Read more</button>
+            </Link>
           </div>
         </div>
         <div className="section__img ">
@@ -26,7 +28,9 @@ const MainFeatures = () => {
             <span className="text-blue-500">TEAM</span>
             <h2 className="text-4xl font-bold tracking-wide text-stone-700 mb-[15px] mt-[10px] after:w-[100px] after:h-[4px] after:bg-blue-500 md:after:block after:mx-auto md:after:mx-0 after:mt-[30px]">Perfect team is a cornerstone of success</h2>
             <p className="text-xl font-light tracking-wide mt-[25px]">Effectively control your team. Send invitations, manage your teammates and assign them different roles.</p>
-            <button>Read more</button>
+            <Link href="/team">
+              <button className="text-blue-500 mt-[10px]">Read more</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -36,7 +40,9 @@ const MainFeatures = () => {
             <span className="text-blue-500">MESSAGES</span>
             <h2 className="text-4xl font-bold tracking-wide text-stone-700 mb-[15px] mt-[10px] after:w-[100px] after:h-[4px] after:bg-blue-500 after:block after:mx-auto md:after:mx-0 after:mt-[30px]">Keep everyone on the same page</h2>
             <p className="text-xl font-light tracking-wide mt-[25px]">Quickly create and share updates, project announcement or polls between your team with Message view</p>
-            <button>Read more</button>
+            <Link href="/messages">
+              <button className="text-blue-500 mt-[10px]">Read more</button>
+            </Link>
           </div>
         </div>
         <div className="section__img">
@@ -52,7 +58,9 @@ const MainFeatures = () => {
             <span className="text-blue-500">DOCUMENTS</span>
             <h2 className="text-4xl font-bold tracking-wide text-stone-700 mb-[15px] mt-[10px] after:w-[100px] after:h-[4px] after:bg-blue-500 after:block after:mx-auto md:after:mx-0 after:mt-[30px]">All files in one place</h2>
             <p className="text-xl font-light tracking-wide mt-[25px]">Access all your Docs, assets and more - then simply assign them to any tasks you want for better workflow</p>
-            <Link href="/documents">Read more</Link>
+            <Link href="/documents">
+              <button className="text-blue-500 mt-[10px]">Read more</button>
+            </Link>
           </div>
         </div>
       </section>

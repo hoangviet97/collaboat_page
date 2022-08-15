@@ -37,7 +37,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="main-container px-[20px] lg:px-0 z-20">
-        <img className="hero__image" src="/tasks.png" ref={imgElement} onLoad={() => console.log(imgElement.current.naturalHeight)} alt="" />
+        <img className="hero__image" src="/tasks.png" ref={imgElement} alt="" />
       </div>
     </div>
   );
