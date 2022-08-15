@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero />
       <section className="main-container">
-        <section className="my-[100px] lg:my-[200px]">
+        <section className="my-[100px] lg:my-[200px] mx-[40px] md:mx-0">
           <div className="text-center mb-[50px]">
             <h2 className="text-4xl font-bold after:w-[100px] after:h-[4px] after:bg-blue-500 md:after:block after:mx-auto mb-[25px] after:mt-[30px]">It&apos;s build for everyone</h2>
             <p className="text-xl">Collaboat is the easy way for everyone to track the work and collaborate on projects.</p>
@@ -46,14 +46,16 @@ const Home: NextPage = () => {
           <MoreFeatures />
         </section>
       </section>
-      <section className="bg-[#222f3e] w-[100%] h-[300px] flex justify-around items-center">
-        <div className="text-white text-5xl leading-normal tracking-normal">
-          So what are you waiting for? <br /> Create your free acoount now
-        </div>
-        <div>
-          <Link href="https://app.collaboat.cz/register">
-            <button className="bg-blue-500 text-white py-[10px] px-[25px] rounded-[12px] text-xl">Get started</button>
-          </Link>
+      <section className="bg-[#222f3e] w-[100%] h-[300px] flex justify-center items-center">
+        <div className="flex flex-col md:flex-row md:justify-around items-center gap-[50px]">
+          <div className="text-white text-3xl md:text-4xl lg:text-5xl leading-normal tracking-normal">
+            So what are you waiting for? <br /> Create your free acoount now
+          </div>
+          <div>
+            <Link href="https://app.collaboat.cz/register">
+              <button className="bg-blue-500 text-white py-[10px] px-[25px] rounded-[12px] text-md md:text-xl">Get started</button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

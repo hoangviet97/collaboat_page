@@ -23,7 +23,8 @@ const Hero = () => {
         <h1 className="text-5xl flex flex-col justify-center font-semibold text-stone-700 mb-[30px] leading-snug">
           <div className="title-box flex flex-row justify-center">
             <div className="text-left ml-[7px]">Control your </div>
-            <div className="words text-blue-500">
+            <div className="block md:hidden text-blue-500 ml-[10px]">work.</div>
+            <div className="words text-blue-500 hidden md:block">
               <span>project.</span>
               <span>work.</span>
               <span>team.</span>
