@@ -3,13 +3,13 @@ import Navigation from "../navigation/Navigation";
 import AuthNav from "../navigation/AuthNav";
 
 const Header = () => {
-  const [bgColor, setBgColor] = useState("transparent");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY > 0) {
-      setBgColor("white");
+      setIsScrolled(true);
     } else {
-      setBgColor("transparent");
+      setIsScrolled(false);
     }
   };
 
@@ -18,7 +18,7 @@ const Header = () => {
   });
 
   return (
-    <div className={`fixed w-[100%] py-7 z-30 px-[20px] bg-${bgColor} border-b-${bgColor === "white" ? "2" : "0"}`}>
+    <div className={`fixed w-[100%] py-7 z-30 px-[20px] ${isScrolled && "nav-bg"}`}>
       <div className="main-container flex items-center justify-between ">
         <div className="header__left-side flex flex-col md:flex-row items-center gap-8">
           <div>

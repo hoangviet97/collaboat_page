@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+.footer-banner {
+  background-image: linear-gradient(#222f3ed2, #222f3ecc), url(../public/footer-bg.jpg);
+  background-size: cover;
+}
+
+.nav-bg {
+  background-color: white;
+  border-bottom: 0.5px solid rgb(230, 230, 230);
+}
+
 .logo {
   width: 100px;
   height: 30px;

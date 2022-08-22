@@ -25,14 +25,14 @@ const Home: NextPage = () => {
           <MoreFeatures />
         </section>
       </section>
-      <section className="bg-[#222f3e] w-[100%] h-[300px] flex justify-center items-center">
+      <section className="footer-banner w-[100%] h-[300px] flex justify-center items-center">
         <div className="flex flex-col md:flex-row md:justify-around items-center gap-[50px]">
           <div className="text-white text-2xl md:text-3xl lg:text-4xl leading-normal tracking-normal">
             So what are you waiting for? <br /> Create your free acoount now
           </div>
           <div>
             <Link href="https://app.collaboat.cz/register">
-              <button className="bg-blue-500 text-white py-[10px] px-[25px] rounded-[12px] text-md md:text-xl">Get started</button>
+              <button className="text-white bg-blue-500 py-[10px] px-[25px] rounded-[12px] text-md md:text-xl">Get started</button>
             </Link>
           </div>
         </div>
